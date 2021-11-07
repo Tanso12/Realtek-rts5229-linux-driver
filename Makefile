@@ -35,10 +35,10 @@ $(TARGET_MODULE)-objs := rtsx.o rtsx_chip.o rtsx_transport.o rtsx_scsi.o rtsx_ca
 
 default:
 	cp -f ./define.release ./define.h
-	make -C /lib/modules/$(KVERSION)/build/ SUBDIRS=$(PWD) modules
+	make -C /lib/modules/$(KVERSION)/build/ M=$(PWD) modules
 debug:
 	cp -f ./define.debug ./define.h
-	make -C /lib/modules/$(KVERSION)/build/ SUBDIRS=$(PWD) modules
+	make -C /lib/modules/$(KVERSION)/build/ M=$(PWD) modules
 install:
 	mkdir -p /lib/modules/$(KVERSION)/kernel/drivers/scsi
 	cp $(TARGET_MODULE).ko /lib/modules/$(KVERSION)/kernel/drivers/scsi -f
