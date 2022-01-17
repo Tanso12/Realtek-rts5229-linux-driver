@@ -1,3 +1,9 @@
+https://github.com/anuesseler/rts5227_driver
+https://github.com/wachin/Realtek-rts5229-linux-driver
+https://github.com/dslm4515/Realtek-rts5229-linux-driver
+https://github.com/germanbottosur/Realtek-rts5229-linux-driver
+https://github.com/kmahyyg/rts5229-dkms
+https://github.com/strahl/rts5227-dkms
 General Information
 ===================
 
